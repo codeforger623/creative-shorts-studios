@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Shorts Studio</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: Arial, sans-serif; 
+      background: #0d0d0d; 
+      color: white; 
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      background: linear-gradient(135deg, #ff1cf7, #00eaff);
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    }
+
+    header p { margin-top: 10px; font-size: 18px; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: #111;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: #00eaff; }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00eaff;
+    }
+
+    .services, .portfolio, .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #141414;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid #222;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #00eaff;
+      box-shadow: 0 0 15px #00eaff;
+    }
+
+    .price {
+      font-size: 28px;
+      margin-top: 10px;
+      color: #00eaff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      background: #111;
+    }
+
+    footer p { color: #aaa; }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #00eaff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover { background: #ff1cf7; color: white; }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Creative Shorts Studio</h1>
+    <p>Short-form edits • Gaming montages • Creative storytelling</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>My Creative Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Short-Form Editing</h3>
+        <p>TikToks, Reels, Shorts, memes, captions, sound FX, effects, pacing.</p>
+      </div>
+
+      <div class="card">
+        <h3>Gaming Montages</h3>
+        <p>Velocity edits, beat sync, transitions, impacts, hype energy.</p>
+      </div>
+
+      <div class="card">
+        <h3>YouTube Creator Edits</h3>
+        <p>Commentary, challenges, funny edits, zooms, SFX, jump cuts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <h3>Short-Form Edit Example</h3>
+        <p>Add your video or link here.</p>
+      </div>
+
+      <div class="card">
+        <h3>Montage Example</h3>
+        <p>Add montage preview here.</p>
+      </div>
+
+      <div class="card">
+        <h3>YouTube Clip Example</h3>
+        <p>Add long-form clip here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="card">
+        <h3>Short-Form Edit</h3>
+        <p>10–30 sec edit with captions & SFX.</p>
+        <p class="price">$10 – $25</p>
+      </div>
+
+      <div class="card">
+        <h3>Gaming Montage</h3>
+        <p>Sync edits, transitions, FX, beat hits.</p>
+        <p class="price">$25 – $60</p>
+      </div>
+
+      <div class="card">
+        <h3>YouTube Video</h3>
+        <p>Funny editing, pacing, zooms, SFX.</p>
+        <p class="price">$40 – $120</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Discord: <strong>YourNameHere#0000</strong></p>
+    <p>Email: <strong>youremail@example.com</strong></p>
+
+    <a class="contact-btn" href="mailto:youremail@example.com">Send Email</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Creative Shorts Studio — All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
