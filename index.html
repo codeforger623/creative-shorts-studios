@@ -105,12 +105,19 @@
 
     .contact-btn:hover { background: #ff1cf7; color: white; }
    
-    .card video {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 10px;
+/* Fix video overflowing */
+.card {
+  overflow: hidden;
 }
+
+.card video {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
 
   </style>
 </head>
